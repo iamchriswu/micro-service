@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: zipkin
+      label: master
+      profile: dev
+  main:
+    allow-bean-definition-overriding: true

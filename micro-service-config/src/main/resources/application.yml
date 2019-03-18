@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: micro-service-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/iamchriswu/micro-service-cloud-config
+          search-paths: respo
+          username: iamchriswu
+          password: 1172477133wq
+  zipkin:
+    base-url: http://localhost:9411
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/

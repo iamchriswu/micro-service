@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: micro-service-zuul
+  zipkin:
+    base-url: http://localhost:9411
+
+server:
+  port: 8769
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    api-a:
+      path: /api/a/**
+      serviceId: micro-service-web-admin-ribbon
+    api-b:
+      path: /api/b/**
+      serviceId: micro-service-web-admin-feign
