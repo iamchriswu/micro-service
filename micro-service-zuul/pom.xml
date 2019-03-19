@@ -68,7 +68,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.funtl.hello.spring.cloud.zuul.ZuulApplication</mainClass>
+                    <mainClass>xyz.tostring.micro.service.zuul.ZuulApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
